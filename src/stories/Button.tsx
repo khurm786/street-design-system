@@ -1,5 +1,4 @@
 import React from "react";
-import { Button as AriaButton } from "react-aria-components";
 import "./button.css";
 
 interface ButtonProps {
@@ -28,18 +27,19 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+
+export function StreetButton({
   primary = false,
   size = "medium",
   backgroundColor,
   label,
   ...props
-}: ButtonProps) => {
+}: ButtonProps) {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
   return (
-    <AriaButton
+    <button
       type="button"
       className={["storybook-button", `storybook-button--${size}`, mode].join(
         " "
@@ -48,6 +48,6 @@ export const Button = ({
       {...props}
     >
       {label}
-    </AriaButton>
+    </button>
   );
-};
+}

@@ -1,10 +1,10 @@
 import "./App.css";
-import { Button } from "./stories/Button";
+import { StreetButton } from "../";
 
 function App() {
   return (
     <>
-      <Button
+      <StreetButton
         size="large"
         primary
         onClick={() => alert("Hello world!")}
