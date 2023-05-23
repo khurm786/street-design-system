@@ -28,7 +28,7 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 
-export function StreetButton({
+export function Button({
   primary = false,
   size = "medium",
   backgroundColor,
