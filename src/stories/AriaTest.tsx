@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import "./button.css";
 import moment from "moment";
-import { Button } from "react-aria-components";
+// import { Button } from "react-aria-components";
+import { StyledButton } from "./AriaStyles";
 
 interface ButtonProps {
   /**
@@ -43,7 +44,7 @@ export function AriaTest({
     : "storybook-button--secondary";
   return (
     <>
-      <Button>something</Button>
+      <StyledButton>some styled button</StyledButton>
       <button
         type="button"
         className={["storybook-button", `storybook-button--${size}`, mode].join(

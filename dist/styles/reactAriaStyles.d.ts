@@ -1,0 +1,4 @@
+/// <reference types="react" />
+export declare const StyledSelect: import("styled-components").IStyledComponent<"web", <T extends object>(props: import("react-aria-components").SelectProps<T> & import("react").RefAttributes<HTMLDivElement>) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>>, {}, never>;
+export declare const StyledPopover: import("styled-components").IStyledComponent<"web", import("react").ForwardRefExoticComponent<import("react-aria-components").PopoverProps & import("react").RefAttributes<HTMLElement>>, {}, never>;
+//# sourceMappingURL=reactAriaStyles.d.ts.map
