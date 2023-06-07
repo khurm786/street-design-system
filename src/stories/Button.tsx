@@ -1,5 +1,6 @@
 import React from "react";
 import "./button.css";
+import moment from "moment";
 
 interface ButtonProps {
   /**
@@ -35,6 +36,7 @@ export function Button({
   label,
   ...props
 }: ButtonProps) {
+  console.log(moment().startOf("day").fromNow());
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
